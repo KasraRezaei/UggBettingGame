@@ -5,4 +5,15 @@ public class UggRock {
         this.size = size;
         this.type = type;
     }
+    public UggRockSize getRockSize(){
+        return this.size;
+    }
+    public UggRockType getRockType(){
+        return this.type;
+    }
+    @Override
+    public String toString(){
+        return size.toString() + ", " +  type.toString();
+    };
+
 };
