@@ -11,6 +11,6 @@ enum UggRockType {
 
     public short  getMultiplierValue(){
         return this.multiplierValue;
-    }
+    };
 };
 

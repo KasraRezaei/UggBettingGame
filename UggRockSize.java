@@ -8,5 +8,7 @@ public enum UggRockSize {
     UggRockSize(short  multiplierValue){
     this.multiplierValue = multiplierValue;
     };
-
+    public short  getMultiplierValue(){
+        return this.multiplierValue;
+    };
 };

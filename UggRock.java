@@ -11,6 +11,11 @@ public class UggRock {
     public UggRockType getRockType(){
         return this.type;
     }
+    public int rockValue(){
+        short a = this.size.getMultiplierValue();
+        short b = this.type.getMultiplierValue();
+        return (a * b);
+    }
     @Override
     public String toString(){
         return size.toString() + ", " +  type.toString();
