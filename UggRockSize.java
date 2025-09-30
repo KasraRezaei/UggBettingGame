@@ -1,11 +1,12 @@
 
 public enum UggRockSize {
-    NAMEDBIGUN(5),
-    QUITEBIGUN(3),
-    hotSOBIGUN(1);
+    NAMEDBIGUN((short)5),
+    QUITEBIGUN((short)3),
+    hotSOBIGUN((short)1);
 
-    private final int value;
-    UggRockSize(int value){
-    this.value = value;
+    private final short  multiplierValue;
+    UggRockSize(short  multiplierValue){
+    this.multiplierValue = multiplierValue;
     };
+
 };
