@@ -1,12 +1,16 @@
 enum UggRockType {
-    SPECKILY(7),
-    OUCHYBLACK(20),
-    FLOATY(2),
-    HOTHOTHOT(15);
+    SPECKILY((short)7),
+    OUCHYBLACK((short)20),
+    FLOATY((short)2),
+    HOTHOTHOT((short)15);
 
-    private final int value;
-    UggRockType(int value){
-        this.value = value;
+    private final short multiplierValue;
+    UggRockType(short multiplierValue){
+        this.multiplierValue = multiplierValue;
     };
+
+    public short  getMultiplierValue(){
+        return this.multiplierValue;
+    }
 };
 
